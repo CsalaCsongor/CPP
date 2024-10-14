@@ -1,6 +1,8 @@
 #include <iostream>
-
+#include "Lista_lancolt.h"
+using namespace std;
 int main() {
-    std::cout << "Hello, Lab_03" << std::endl;
+    List myList;
+
     return 0;
 }

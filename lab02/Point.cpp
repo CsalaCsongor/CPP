@@ -29,11 +29,6 @@ void Point::print() const {
     return sqrt((a.x-b.x)*(a.x-b.x) + (a.y-b.y)*(a.y-b.y));
 }
 
-bool Point::isSquare(Point p1, Point p2, Point p3, Point p4) {
-    int d[6] = { dist2(p1, p2), dist2(p1, p3), dist2(p1, p4), dist2(p2, p3), dist2(p2, p4), dist2(p3, p4) };
-    std::sort(d, d + 6);
-    return d[0] > 0 && d[0] == d[1] && d[1] == d[2] && d[2] == d[3] && d[4] == d[5];
-}
 
 void Point::testIsSquare(const char * filename)
 {
