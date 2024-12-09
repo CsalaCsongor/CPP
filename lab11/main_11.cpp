@@ -1,6 +1,8 @@
 #include <iostream>
-
+#include "SettlementStatisticsImpl.h"
 int main() {
-    std::cout << "Hello, Lab_11" << std::endl;
+    string fileName = "telepulesek.csv";
+    SettlementStatisticsImpl settlementStatistics(fileName);
+
     return 0;
 }

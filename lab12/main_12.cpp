@@ -1,6 +1,18 @@
 #include <iostream>
+#include <map>
+#include <vector>
+#include <string>
+#include <sstream>
+#include "SimpleTextGenerator.h"
+using namespace std;
+
 
 int main() {
-    std::cout << "Hello, Lab_12" << std::endl;
+
+    string text = "Now is not the time for sleep, now is the time for party!";
+    SimpleTextGenerator textGenerator;
+    textGenerator.trainFromText(text);
+
+
     return 0;
 }
